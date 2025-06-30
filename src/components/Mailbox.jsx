@@ -22,7 +22,7 @@
     );
 }; */
 
-const Mailbox = ({ username, message }) => {
+/* const Mailbox = ({ username, message }) => {
     return (
         <div>
             <p>Hello {username}</p>
@@ -36,4 +36,4 @@ const Mailbox = ({ username, message }) => {
             )}   
         </div>
     );
-};
+}; */

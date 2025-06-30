@@ -75,5 +75,47 @@ export default function App() {
   );
 }
 
-import Mailbox from "./Mailbox";
 
+
+// import Mailbox from "./Mailbox";
+
+/* const favBooks = [
+  { id: "id-1", name: "JS for beginners" },
+  { id: "id-2", name: "React basics" },
+  { id: "id-3", name: "React Router overview" },
+];
+
+const BookList = ({ books }) => {
+  return (
+    <ul>
+      {books.map((book, index) => {
+        return <li key={index}>{book.name}</li>
+      })}
+    </ul>
+  );
+}; 
+
+const App = () => {
+  return (
+    <>
+      <h1>Books of the week</h1>
+      <BookList books={favBooks}/>
+    </>
+  )
+} */
+
+const alertStyles = {
+  margin: 8,
+  padding: "12px 16px",
+  borderRadius: 4,
+  backgroundColor: "gray",
+  color: "white",
+  }
+
+export const Alert = ({children}) => {
+  return (
+    <p style={alertStyles}>Please update your email!</p>,
+    <p style={alertStyles}>Theetre</p>
+
+  );
+};

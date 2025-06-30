@@ -7,6 +7,16 @@ export default function Product({name, imgUrl="https://dummyimage.com/640x480/2a
             <h2>{name}</h2>
             <img src={imgUrl} alt={name} width="640" />
             <p>Price: {price} credits</p>
-        </div>
+        </div>/* ,
+
+        <div>
+        {
+            [1, 2, 3].map(item => {
+                return <p>{item}</p>
+            })
+        }
+    </div> */
     )
 }
+
+
