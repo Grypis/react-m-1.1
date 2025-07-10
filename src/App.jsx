@@ -1,14 +1,18 @@
-import './App.css'
+import Profile from "./components/Profile"
 
 function App() {
   return (
     <div>
-      <h1>Vite + React</h1>{" "}
-      <p>
-        Edit <code>src/App.jsx</code> and save to test HMR
-      </p>
+
+      <Profile/>
+      <Profile/>
+      <Profile/>
+      
    </div>
   )
 }
+
+
+
 
 export default App
