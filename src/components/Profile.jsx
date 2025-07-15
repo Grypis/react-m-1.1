@@ -1,10 +1,12 @@
-const Profile = () => {
+const Profile = (props) => {
+  console.log('props:', props);
+  
     return (
       <div>
-        <h2>Name: Max</h2>
-        <p>Phone: 123456789</p>
-        <p>Email: 1273@example.com</p>
-        <p>Status: online</p>
+        <h2>Name: { props.name}</h2>
+        <p>Phone: {props.phone}</p>
+        <p>Email: {props.email}</p>
+        <p>Status: {props.status}</p>
       </div>
     )
 }

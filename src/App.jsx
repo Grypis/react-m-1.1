@@ -4,9 +4,21 @@ function App() {
   return (
     <div>
 
-      <Profile/>
-      <Profile/>
-      <Profile/>
+      <Profile
+        name="Max"
+        phone="123344131"
+        email="123d@example.com"
+        status="online"
+      />
+
+      <Profile
+        name="Alax"
+        phone="4412344131"
+        email="1sdadd@example.com"
+        status="offline"
+      />
+      {/* <Profile/>
+      <Profile/> */}
       
    </div>
   )
