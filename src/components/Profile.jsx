@@ -1,14 +1,12 @@
-const Profile = (props) => {
-  console.log('props:', props);
-  
+const Profile = ({name, phone, email, status = "offline", hasPhisicalAddress}) => {
     return (
       <div>
-        <h2>Name: { props.name}</h2>
-        <p>Phone: {props.phone}</p>
-        <p>Email: {props.email}</p>
-        <p>Status: {props.status}</p>
+        <h2>Name: {name} {hasPhisicalAddress && "🏠"}</h2>
+        <p>Phone: {phone}</p>
+        <p>Email: {email}</p>
+        <p>Status: {status === "online" ? "😍" : "😶‍🌫️"}  </p>
       </div>
-    )
+    ) 
 }
   
 export default Profile;
