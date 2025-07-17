@@ -16,3 +16,4 @@ const ProfileList = ({ list }) => {
 }
 
 export default ProfileList;
+

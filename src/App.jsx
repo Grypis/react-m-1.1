@@ -1,5 +1,6 @@
 import Profile from "./components/Profile"
 import ProfileList from "./components/ProfileList";
+import Section from "./components/Section/Section";
 
 const dataFromServer = [
   {
@@ -88,22 +89,51 @@ const dataFromServer = [
 function App() {
   return (
     <div>
-     {/*  <ProfileList list={dataFromServer}/> */}
 
+      <Section title="Profile list">
+          <Profile
+        name="Max"
+        phone="123124131"
+        email="hi12h@example.com"
+        status="online"
+        hasPhisicalAddress={false}
+        />
+        <Profile
+        name="Max"
+        phone="123124131"
+        email="hi12h@example.com"
+        status="online"
+        hasPhisicalAddress={false}
+        />
+        <Profile
+        name="Max"
+        phone="123124131"
+        email="hi12h@example.com"
+        status="online"
+        hasPhisicalAddress={false}
+      />
+      </Section>
 
-      {dataFromServer.map((profile) => {
+      
+     <Section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil est perspiciatis culpa accusantium totam sequi, ducimus veniam modi tenetur sapiente, quam deleniti assumenda repudiandae nostrum obcaecati sed veritatis illum earum.</p>
+        <button>Lorem, ipsum</button>
+      </Section>
+      <Section>
+        {dataFromServer.map(({email, name, phone, status, hasPhisicalAddress}) => {
         return (
           <Profile
-          key={profile.email}
-          name={profile.name}
-          phone={profile.phone}
-          email={profile.email}
-          status={profile.status}
-          hasPhisicalAddress={profile.hasPhisicalAddress}
+          key={email}
+          name={name}
+          phone={phone}
+          email={email}
+          status={status}
+          hasPhisicalAddress={hasPhisicalAddress}
         />
         );     
       })}
-      
+      </Section>
+           
     </div>
   );
 }
