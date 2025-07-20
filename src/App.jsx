@@ -1,4 +1,4 @@
-import Profile from "./components/Profile"
+import Profile from "./components/Profile/Profile"
 import ProfileList from "./components/ProfileList";
 import Section from "./components/Section/Section";
 
