@@ -24,10 +24,10 @@ console.log("css: ", css);
         "hasPhisicalAddress" : hasPhisicalAddress === true
       })}> */
       className={clsx(css.profile, hasPhisicalAddress && css.hasPhisicalAddress)}>
-        <h2>Name: {name} {hasPhisicalAddress && "🏠"}</h2>
-        <p>Phone: {phone}</p>
-        <p>Email: {email}</p>
-        <p>Status: {status === "online" ? "😍" : "😶‍🌫️"}  </p>
+        <h2 className={css.title}>Name: {name} {hasPhisicalAddress && "🏠"}</h2>
+        <p className={css.fieldRow}>Phone: {phone}</p>
+        <p className={css.fieldRow}>Email: {email}</p>
+        <p className={css.fieldRow}>Status: {status === "online" ? "😍" : "😶‍🌫️"}  </p>
       </div>
     ) 
 }

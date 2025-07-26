@@ -2,6 +2,8 @@ import Profile from "./components/Profile/Profile"
 import ProfileList from "./components/ProfileList";
 import Section from "./components/Section/Section";
 
+import css from "./components/Profile/Profile.module.css"
+
 const dataFromServer = [
   {
     name: "Іван Петров",
@@ -90,6 +92,7 @@ function App() {
   return (
     <div>
 
+      <p className={css.fieldRow}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iure laudantium maxime repudiandae asperiores officia eius deserunt, voluptatum obcaecati assumenda.</p>
       <Section title="Profile list">
           <Profile
         name="Max"
