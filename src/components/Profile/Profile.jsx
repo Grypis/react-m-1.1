@@ -13,11 +13,6 @@ const Profile = ({
 }) => {
   console.log('css: ', css);
 
-  /* const className = ["profile"];
-
-  if (hasPhisicalAddress) {
-    className.push("hasPhisicalAddress");
-  } */
   return (
     <div
       /* className={`profile ${hasPhisicalAddress ? "hasPhisicalAddress" : ""}`}> */
