@@ -21,6 +21,7 @@ const Profile = ({
       /* className={clsx("profile", {
         "hasPhisicalAddress" : hasPhisicalAddress === true
       })}> */
+      
       className={clsx(
         css.profile,
         hasPhisicalAddress && css.hasPhisicalAddress,
@@ -42,7 +43,8 @@ const Profile = ({
         Status: {status === 'online' ? <RiRadioButtonLine /> : <CiStreamOff />}
       </p>
     </div>
-  );
+    // gg
+  )
 };
 
 export default Profile;
